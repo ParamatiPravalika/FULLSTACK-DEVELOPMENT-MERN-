@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font family globally */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Darker text color */
+        }
+        /* Style for the copy message notification */
+        .copy-message {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .copy-message.show {
+            opacity: 1;
+        }
+        /* Added for smooth scrolling. This is handled by the 'scroll-smooth' class on HTML tag */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4 fixed w-full top-0 z-50 shadow-md">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <!-- Logo/Name -->
+            <a href="#header" class="text-white text-2xl font-bold mb-2 sm:mb-0">Paramati Pravalika</a>
+
+            <!-- Navigation Links -->
+            <div class="flex flex-wrap justify-center sm:justify-end gap-4 text-lg">
+                <a href="#about-me" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">Projects</a>
+                <a href="#certifications" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">Certifications</a>
+                <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="min-h-screen flex flex-col items-center justify-center py-10 px-4 sm:px-6 lg:px-8 mt-16">
+        <div class="max-w-4xl w-full bg-white shadow-xl rounded-xl p-8 space-y-12">
+
+            <!-- Header Section -->
+            <header id="header" class="text-center pt-8">
+                <img src="Prava pic.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-indigo-200">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-2">Paramati Pravalika</h1>
+                <p class="text-lg text-gray-600">Passionate Web Developer | Frontend Enthusiast | Lifelong Learner</p>
+            </header>
+
+            <!-- About Me Section -->
+            <section id="about-me" class="space-y-4 pt-16">
+                <h2 class="text-3xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">About Me</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Hello! I'm Pravalika, a web developer with a strong focus on creating engaging and user-friendly web experiences. I love bringing ideas to life through code and continuously learning new technologies. My journey in web development started with a curiosity for how websites work, and it quickly grew into a passion for building beautiful and functional applications.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    To secure a challenging position in a reputable organization that will
+                    allow me to utilise my skills and passion for specific field to
+                    contribute to the company's success.
+                </p>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="space-y-4 pt-16">
+                <h2 class="text-3xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">Skills</h2>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">HTML5</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">CSS3</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">JavaScript</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">React.js</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">Java</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">Node.js</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">Express.js</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">MongoDB</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">Python</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">Git/GitHub</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">Bootstrap CSS</span>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="space-y-6 pt-16">
+                <h2 class="text-3xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">Projects</h2>
+
+                <!-- Project 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">User authentication technique for office environment</h3>
+                    <p class="text-gray-600 mb-4">
+                        Providing security for applications and systems by Using two factor Authentication(login and OTP).
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">python</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">MySql</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">web development using python</span>
+                    </div>
+                    
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Food supply chain traceability using blockchain</h3>
+                    <p class="text-gray-600 mb-4">
+                       Blockchain provides a transparent and immutable ledger that records every transaction and event in the supply chain. By enabling rapid traceability, blockchain helps in identifying and addressing food safety issues more quickly.
+                    </p>
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">python</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">html</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">CSS</span>
+                    </div>
+                    
+                </div>
+
+                
+            </section>
+
+            <!-- Certifications Section -->
+            <section id="certifications" class="space-y-6 pt-16">
+                <h2 class="text-3xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">Certifications</h2>
+
+                <!-- Certification 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">programming essentials in C</h3>
+                    <p class="text-gray-600 mb-2">
+                        Issued by cisco
+                    </p>
+                    <p class="text-gray-500 text-sm">Issued: may 2023</p>
+                    <div class="mt-4">
+                        <a href="cjpg.jpg" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors duration-200" aria-label="View Credential">
+                            View Credential
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">AWS Certified data engineering</h3>
+                    <p class="text-gray-600 mb-2">
+                        Issued by Amazon Web Services (AWS)
+                    </p>
+                    <p class="text-gray-500 text-sm">Issued: October 2022</p>
+                    <div class="mt-4">
+                        <a href="data engineering.jpg" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors duration-200" aria-label="View Credential">
+                            View Credential
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">JSE</h3>
+                    <p class="text-gray-600 mb-2">
+                        Issued by cisco
+                    </p>
+                    <p class="text-gray-500 text-sm">Issued: april 2023</p>
+                    <div class="mt-4">
+                        <a href="jse.jpg" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors duration-200" aria-label="View Credential">
+                            View Credential
+                        </a>
+                    </div>
+                </div>
+                <!-- Certification 4 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">python programming certificate</h3>
+                    <p class="text-gray-600 mb-2">
+                        Issued by elewayte
+                    </p>
+                    <p class="text-gray-500 text-sm">Issued: June 2023</p>
+                    <div class="mt-4">
+                        <!-- <a href="https://www.freecodecamp.org/certification/your-username/responsive-web-design" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors duration-200" aria-label="View Credential">
+                            View Credential
+                        </a> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="text-center space-y-4 pt-16">
+                <h2 class="text-3xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">Get in Touch</h2>
+                <p class="text-gray-700">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <button id="copyEmailButton" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300">
+                        Copy Email
+                    </button>
+                    <a href="https://www.linkedin.com/in/paramati-pravalika-104361254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300">
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/ParamatiPravalika" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300">
+                        github
+                    </a>
+                   
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="text-center text-gray-500 text-sm mt-10 pt-6 border-t border-gray-200">
+                &copy; 2025 Paramati Pravalika. All rights reserved.
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- Message for copied email -->
+    <div id="copyMessage" class="copy-message">
+        Email copied to clipboard!
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const emailToCopy = "paramatipravalika84122gmail.com"; // Replace with your actual email address
+            const copyEmailButton = document.getElementById('copyEmailButton');
+            const copyMessage = document.getElementById('copyMessage');
+
+            if (copyEmailButton) {
+                copyEmailButton.addEventListener('click', function() {
+                    // Create a temporary textarea element to hold the email
+                    const tempInput = document.createElement('textarea');
+                    tempInput.value = emailToCopy;
+                    document.body.appendChild(tempInput);
+                    tempInput.select(); // Select the text
+                    document.execCommand('copy'); // Copy the text to clipboard
+                    document.body.removeChild(tempInput); // Remove the temporary element
+
+                    // Show the message
+                    copyMessage.classList.add('show');
+
+                    // Hide the message after a few seconds
+                    setTimeout(() => {
+                        copyMessage.classList.remove('show');
+                    }, 2000); // Message disappears after 2 seconds
+                });
+            }
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default anchor click behavior
+                    const targetId = this.getAttribute('href'); // Get the href (e.g., "#about-me")
+                    const targetElement = document.querySelector(targetId); // Find the element by ID
+
+                    if (targetElement) {
+                        // Scroll smoothly to the target element
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start' // Align the top of the element with the top of the scroll area
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
