@@ -12,7 +12,9 @@
         body {
             font-family: 'Inter', sans-serif;
             background-color: #f8fafc; /* Light blue-gray background */
-            color: #334155; /* Darker text color */
+            color: #334155; 
+            font-size: 0.75rem;
+            
         }
         /* Style for the copy message notification */
         .copy-message {
@@ -35,45 +37,49 @@
         /* Added for smooth scrolling. This is handled by the 'scroll-smooth' class on HTML tag */
         html {
             scroll-behavior: smooth;
+    
         }
+        
     </style>
 </head>
 <body class="antialiased">
     <!-- Navigation Bar -->
-    <nav class="bg-gray-800 p-4 fixed w-full top-0 z-50 shadow-md">
-        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+    <nav class="bg-gray-800 fixed w-full top-0 z-50 shadow-md">
+        <div class="w-full max-w-screen-sm mx-auto flex flex-col sm:flex-row justify-between items-center px-4">
+">
             <!-- Logo/Name -->
-            <a href="#header" class="text-white text-2xl font-bold mb-2 sm:mb-0">Paramati Pravalika</a>
+            <a href="#header" class="text-white text font-bold mb-1  sm:mb-0">Paramati Pravalika</a>
 
             <!-- Navigation Links -->
-            <div class="flex flex-wrap justify-center sm:justify-end gap-4 text-lg">
-                <a href="#about-me" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">About</a>
-                <a href="#skills" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">Skills</a>
-                <a href="#projects" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">Projects</a>
-                <a href="#certifications" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">Certifications</a>
-                <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">Contact</a>
-            </div>
+            <div class="flex flex-wrap justify-center sm:justify-end gap-4 text-xs">
+    <a href="#about-me" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">About</a>
+    <a href="#skills" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">Skills</a>
+    <a href="#projects" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">Projects</a>
+    <a href="#certifications" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">Certifications</a>
+    <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md transition-colors duration-200">Contact</a>
+</div>
         </div>
     </nav>
 
     <!-- Main Content Container -->
     <div class="min-h-screen flex flex-col items-center justify-center py-10 px-4 sm:px-6 lg:px-8 mt-16">
-        <div class="max-w-4xl w-full bg-white shadow-xl rounded-xl p-8 space-y-12">
+    <div class="w-full max-w-screen-sm mx-auto bg-white shadow-xl rounded-xl p-6 sm:p-8 space-y-12">
+>
 
             <!-- Header Section -->
             <header id="header" class="text-center pt-8">
                 <img src="Prava pic.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-indigo-200">
-                <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-2">Paramati Pravalika</h1>
-                <p class="text-lg text-gray-600">Passionate Web Developer | Frontend Enthusiast | Lifelong Learner</p>
+                <h1 class="text-base sm:text-base font-extrabold text-gray-800">Paramati Pravalika</h1>
+                <p class="text-sm text-gray-600">Passionate Web Developer | Frontend Enthusiast | Lifelong Learner</p>
             </header>
 
             <!-- About Me Section -->
-            <section id="about-me" class="space-y-4 pt-16">
-                <h2 class="text-3xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">About Me</h2>
-                <p class="text-gray-700 leading-relaxed">
-                    Hello! I'm Pravalika, a web developer with a strong focus on creating engaging and user-friendly web experiences. I love bringing ideas to life through code and continuously learning new technologies. My journey in web development started with a curiosity for how websites work, and it quickly grew into a passion for building beautiful and functional applications.
+            <section id="about-me" class="space-y-4 pt-16 text-sm">
+                <h2 class="text-xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">About Me</h2>
+                <p class="text-gray-700 leading-relaxed text-sm">
+                    Hello! I'm Pravalika, a web developer with a strong focus on creating engaging and user-friendly web experiences. I love bringing ideasR to life through code and continuously learning new technologies. My journey in web development started with a curiosity for how websites work, and it quickly grew into a passion for building beautiful and functional applications.
                 </p>
-                <p class="text-gray-700 leading-relaxed">
+                <p class="text-gray-700 leading-relaxed text-sm">
                     To secure a challenging position in a reputable organization that will
                     allow me to utilise my skills and passion for specific field to
                     contribute to the company's success.
@@ -81,30 +87,30 @@
             </section>
 
             <!-- Skills Section -->
-            <section id="skills" class="space-y-4 pt-16">
-                <h2 class="text-3xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">Skills</h2>
+            <section id="skills" class="space-y-4 pt-16 text-xs">
+                <h2 class="text-xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">Skills</h2>
                 <div class="flex flex-wrap gap-3">
-                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">HTML5</span>
-                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">CSS3</span>
-                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">JavaScript</span>
-                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">React.js</span>
-                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">Java</span>
-                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">Node.js</span>
-                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">Express.js</span>
-                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">MongoDB</span>
-                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">Python</span>
-                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">Git/GitHub</span>
-                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold shadow-md">Bootstrap CSS</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-xs font-semibold shadow-md">HTML5</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-xs font-semibold shadow-md">CSS3</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-xs font-semibold shadow-md">JavaScript</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-xs font-semibold shadow-md">React.js</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-xs font-semibold shadow-md">Java</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-xs font-semibold shadow-md">Node.js</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-xs font-semibold shadow-md">Express.js</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-xs font-semibold shadow-md">MongoDB</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-xs font-semibold shadow-md">Python</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-xs font-semibold shadow-md">Git/GitHub</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-xs font-semibold shadow-md">Bootstrap CSS</span>
                 </div>
             </section>
 
             <!-- Projects Section -->
             <section id="projects" class="space-y-6 pt-16">
-                <h2 class="text-3xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">Projects</h2>
+                <h2 class="text-xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">Projects</h2>
 
                 <!-- Project 1 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">User authentication technique for office environment</h3>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-m">User authentication technique for office environment</h3>
                     <p class="text-gray-600 mb-4">
                         Providing security for applications and systems by Using two factor Authentication(login and OTP).
                     </p>
@@ -118,7 +124,7 @@
 
                 <!-- Project 2 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Food supply chain traceability using blockchain</h3>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-m">Food supply chain traceability using blockchain</h3>
                     <p class="text-gray-600 mb-4">
                        Blockchain provides a transparent and immutable ledger that records every transaction and event in the supply chain. By enabling rapid traceability, blockchain helps in identifying and addressing food safety issues more quickly.
                     </p>
@@ -136,11 +142,11 @@
 
             <!-- Certifications Section -->
             <section id="certifications" class="space-y-6 pt-16">
-                <h2 class="text-3xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">Certifications</h2>
+                <h2 class="text-xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">Certifications</h2>
 
                 <!-- Certification 1 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">programming essentials in C</h3>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-m">programming essentials in C</h3>
                     <p class="text-gray-600 mb-2">
                         Issued by cisco
                     </p>
@@ -154,7 +160,7 @@
 
                 <!-- Certification 2 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">AWS Certified data engineering</h3>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-m">AWS Certified data engineering</h3>
                     <p class="text-gray-600 mb-2">
                         Issued by Amazon Web Services (AWS)
                     </p>
@@ -168,7 +174,7 @@
 
                 <!-- Certification 3 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">JSE</h3>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-sm">JSE</h3>
                     <p class="text-gray-600 mb-2">
                         Issued by cisco
                     </p>
@@ -181,7 +187,7 @@
                 </div>
                 <!-- Certification 4 -->
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">python programming certificate</h3>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 text-sm">python programming certificate</h3>
                     <p class="text-gray-600 mb-2">
                         Issued by elewayte
                     </p>
@@ -196,7 +202,7 @@
 
             <!-- Contact Section -->
             <section id="contact" class="text-center space-y-4 pt-16">
-                <h2 class="text-3xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4">Get in Touch</h2>
+                <h2 class="text-xl font-bold text-gray-800 border-b-2 border-indigo-500 pb-2 mb-4 text-sm">Get in Touch</h2>
                 <p class="text-gray-700">I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                     <button id="copyEmailButton" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300">
