@@ -1,0 +1,98 @@
+.how-wrapper {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.how-title {
+  display: block;
+  font-family: "Montagu Slab", serif;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.how-steps {
+
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.how-card {
+  width: 22%;
+  min-width: 250px;
+  text-align: center;
+}
+
+.circle {
+  background-color: #195dd4;
+  color: white;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 auto 15px auto;
+}
+
+.how-card span {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+/* Mobile screens (up to 768px) */
+@media (max-width: 768px) {
+  .how-steps {
+    flex-direction: column; 
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .how-card {
+    width: 100%;  
+    min-width: auto;
+  }
+
+  .how-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+  }
+
+  .how-card span {
+    font-size: 15px;
+  }
+}
+
+/* Tablet screens (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .how-card {
+    width: 45%;  
+  }
+
+  .how-title {
+    font-size: 32px;
+  }
+
+  .circle {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.1rem;
+  }
+}
